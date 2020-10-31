@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Catedrático</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navegador">
+            <img src="../imagenes/logo_1.png" width="300px">
+            <ul class="navbar-var grid-header" >
+                <!-- Llamado de paginas desde carpeta Pages -->
+                <li> <a class="nav-link" href="../index.html">Salir</a> </li>
+                <li> <a class="nav-link" href="agregar_catedratico.html">Catedrático</a> </li>
+                <li> <a class="nav-link" href="agregar_carrera.html">Carrera</a> </li>
+                <li> <a class="nav-link" href="programar_curso.html">Horario</a> </li>
+                <li> <a class="nav-link" href="agregar_curso.html">Curso</a> </li>
+                <li> <a class="nav-link" href="agregar_actividad.html">Actividad</a> </li>
+                <li> <a class="nav-link" href="promociones.html">Promoción</a> </li>
+                <li> <a class="nav-link" href="agregar_anuncio.html">Anuncio</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="añadir">
+
+               
+
+
+            <br>
+            <h2>Agregar Catedrático</h2>
+            <form action="">
+                <br>
+                <label for="nomCate">Nombre:</label>
+                <input type="text" class="form-control" id="nomCate" name="txtidCate" autocomplete="false">
+                <br>
+                <label for="idCate">Usuario:</label>
+                <input type="text" class="form-control" id="idCate" name="txtidCate" autocomplete="false">
+                <br>
+                <label for="idContra">Contraseña:</label>
+                <input type="password" class="form-control" id="idContraCate" name="txtContra" autocomplete="false">
+                <br>
+
+                <hr>
+                <input type="button" onclick="setCatedratico()" value="Guardar" class="btn btn-success" style="background-color: #000035; color: white;">
+                <br>
+                <br>
+                <br>
+            </form>
+        </article>
+                
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

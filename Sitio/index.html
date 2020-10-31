@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+     
+       <link rel="stylesheet" href="css/estilo.css"> <!-- Llamado de hoja de estilos desde carpeta Styles  -->
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+       <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body class="body_cls">
+    <div class="modal-dialog text-center Contenido" id="divLogin">
+        <div class="col-sm-10 main-section"  >
+            <div class="modal-content" >
+                <div class="col-12 user-img">
+                    <img id="imgLogin" src="imagenes/login_principal.jpeg" />
+                </div>
+                    <form class="col-12" >
+
+                        <h3>Iniciar Sesión</h3>
+                        <br>
+                        <div class="form-group" id="user-group">
+                            <input id="idUsuario" type="text" class="form-control" autocomplete="off" placeholder="Usuario" name="username"/>
+                        </div>
+                        <br>
+                        <div class="form-group" id="contrasena-group">
+                            <input id="idContraseña" type="password" class="form-control" placeholder="Contraseña" name="password"/>
+                        </div>
+                        <br>
+                        <button type="button" onclick="acceso()" id="Botone" class="btn btn-outline-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
+                        <br>
+                        <p>¿Aún no tiene una cuenta? <a id="enlaces" href="paginas/agregar_estudiante.html">Registrarse</a></p>
+                        <br>
+                        <br>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div id="divLogo">
+        <img src="imagenes/logo-color.png" id="logoLogin">
+    </div>
+
+    <script src="js/script.js"></script>    
+</body>
+</html>

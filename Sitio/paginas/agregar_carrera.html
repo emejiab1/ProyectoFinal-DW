@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreras</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body onload="getCarrera()">
+    <header>
+        <nav class="navbar navegador">
+            <img src="../imagenes/logo_1.png" width="300px">
+            <ul class="navbar-var grid-header" >
+                <!-- Llamado de paginas desde carpeta Pages -->
+                <li> <a class="nav-link" href="../index.html">Salir</a> </li>
+                <li> <a class="nav-link" href="agregar_catedratico.html">Catedrático</a> </li>
+                <li> <a class="nav-link" href="agregar_carrera.html">Carrera</a> </li>
+                <li> <a class="nav-link" href="programar_curso.html">Horario</a> </li>
+                <li> <a class="nav-link" href="agregar_curso.html">Curso</a> </li>
+                <li> <a class="nav-link" href="agregar_actividad.html">Actividad</a> </li>
+                <li> <a class="nav-link" href="promociones.html">Promoción</a> </li>
+                <li> <a class="nav-link" href="agregar_anuncio.html">Anuncio</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <form action="" class="formulario-facultad" >
+                    <br>
+                    <h4 align="Center">Registrar nueva carrera</h4>
+                    <div class="form-group row">
+                        <label for=""></label>
+                        <input id="idNomCarrera" type="text"  placeholder="Carrera" class="form-control">
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                            Ingresar nombre completo de la carrera
+                        </small>
+                    </div>
+                    <div class="form-group row">
+                        <button onclick="setCarrera()" type="button" class="btn btn-info" style="background-color: #000035; color: white;">Agregar</button>
+                    </div>
+                    <br>
+                </form>  
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <form action="" class="formulario-facultad" >
+                    <br>
+                    <h4 align="Center">Asignar Jornada</h4>
+                    <div class="form-group row">
+                        <label for="validationTooltip01">Carrera:</label>
+                        <select class="form-control"  id="idCarreras" name="idHorario">
+                        
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label for=""></label>
+                        <input type="text" id="idDireCarrera" placeholder="Dirección" class="form-control">
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                        Ingresar dirección exacta y completa
+                        </small>
+                    </div>
+                    <div class="form-group row">
+                        <select class="form-control"  id="idJornada" name="idHorario">
+                            <option value="1" selected disabled>-Jornada-</option>
+                            <option value="2">Domingo</option>
+                            <option value="3">Lunes</option>
+                            <option value="4">Martes</option>
+                            <option value="5">Miércoles</option>
+                            <option value="6">Jueves</option>
+                            <option value="6">Viernes</option>
+                            <option value="6">Sábado</option>
+                        </select>
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                        Seleccionar el día 
+                        </small>
+                    </div>
+                    <div class="form-group row">
+                        <button onclick="setJornada()" type="button" class="btn btn-info" style="background-color: #000035; color: white;">Agregar</button>
+                    </div>
+                    <br>
+                </form>  
+            </div>
+        </div>
+
+        <script src="../js/script.js"></script>
+
+    </main>
+</body>
+</html>

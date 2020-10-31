@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensum</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body onload="cargarPensum()">
+    <header>
+        <nav class="navbar navegador">
+            <img src="../imagenes/logo_1.png" width="300px">
+            <ul class="navbar-var grid-header" id="mostrar">
+                <!-- Llamado de paginas desde carpeta Pages -->
+               
+            </ul>
+        </nav>
+    </header>
+    <div class="container mt-4">
+            <div class="col-md-8">
+                <nav class="pictureprincipal card">
+                    <div class="card-body">
+                        <div id="accordion" >
+                        
+                            <h5 class="card-title">Pensum 2014</h5>
+                            <p>A continuación se listan todos los cursos del Pensum seleccionado. 
+                                Para una mejor visualización puede contraer el listado de cursos por ciclo, 
+                                presionando el encabezado del ciclo correspondiente.</p>
+                            <div class="card">
+                            
+                            <!----------------CICLO 1--------------------------------------------------->
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <p>1er Ciclo</p>
+                                        </button>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="collapse show  headingeneral" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+
+
+                                    <table id="tablepensum" class="data-visualization  hidden " width="98%" style="display: block;">
+                                        <thead>
+                                            <tr>
+                                                <th width="65%">Nombre del Curso</th>
+                                            </tr>
+                                        </thead>
+                                            <tbody id="idPensum1">
+                                                    
+                                            </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                           <!---------------------------------------CICLO 2 ------------------------------->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    
+                                    <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <p>2do Ciclo</p>
+                                    </button>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse headingeneral" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-2">
+            
+                                        <label class="pensum-level-no" style="cursor: pointer;"><sup></sup></label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                        <table id="tablepensum" class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum2">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+<!-----------------------------CICLO 3----------------------------------------------->
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <p>3er Ciclo</p>
+                                    </button>
+                                </h5>
+                                </div>
+                                
+                            
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-3">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                        <table class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum3">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <p>4to Ciclo</p>
+                                    </button>
+                                </h5>
+                                </div>
+                                
+                            
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-4">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                        <table class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum4">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <p>5to Ciclo</p>
+                                    </button>
+                                </h5>
+                                </div>
+                                
+                            
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-5">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                        <table class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum5">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                                <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <p>6to Ciclo</p>
+                                    </button>
+                                </h5>
+                                </div>
+                                
+                            
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-6">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                        <table class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum6">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingSeven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <p>7to Ciclo</p>
+                                    </button>
+                                </h5>
+                                </div>
+                                
+                            
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-7">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                        <table class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum7">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingEight">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    <p>8vo Ciclo</p>
+                                    </button>
+                                </h5>
+                                </div>
+                                
+                            
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-8">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                        <table class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum8">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingNine">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    <p>9no Ciclo</p>
+                                    </button>
+                                </h5>
+                                </div>
+                                
+                            
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-9">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                        <table class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum9">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-header" id="headingTen">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    <p>10mo Ciclo</p>
+                                    </button>
+                                </h5>
+                                </div>
+                                
+                            
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="level-10">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                        <table class="data-visualization  hidden " width="98%" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th width="65%">Nombre del Curso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="idPensum10">
+                                                    
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

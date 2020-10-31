@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body onload="cargarHorarios()">
+    <header>
+        <nav class="navbar navegador">
+            <img src="../imagenes/logo_1.png" width="300px">
+            <ul class="navbar-var grid-header" id="mostrar">
+                <!-- Llamado de paginas desde carpeta Pages -->
+     
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <div class="container">
+          
+                <div class="col-md-12 ">
+                    <form action="">
+                        <br>
+                        <table class="table table-bordered table-striped">
+                            <thead style="background-color:  #000035; color: white;">
+                                <tr>
+                                    <th>Curso</th>
+                                    <th>Horario</th>
+                                    <th>Sección</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableCurso">
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>

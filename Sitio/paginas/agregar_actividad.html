@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+    <body onload="getCarrera()">
+
+        
+        <header>
+        <nav class="navbar navegador">
+            <img src="../imagenes/logo_1.png" width="300px">
+            <ul class="navbar-var grid-header" >
+                <!-- Llamado de paginas desde carpeta Pages -->
+                <li> <a class="nav-link" href="../index.html">Salir</a> </li>
+                <li> <a class="nav-link" href="agregar_catedratico.html">Catedrático</a> </li>
+                <li> <a class="nav-link" href="agregar_carrera.html">Carrera</a> </li>
+                <li> <a class="nav-link" href="programar_curso.html">Horario</a> </li>
+                <li> <a class="nav-link" href="agregar_curso.html">Curso</a> </li>
+                <li> <a class="nav-link" href="agregar_actividad.html">Actividad</a> </li>
+                <li> <a class="nav-link" href="promociones.html">Promoción</a> </li>
+                <li> <a class="nav-link" href="agregar_anuncio.html">Anuncio</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="container mt-4">
+              <div class="col-md-8">
+                    <nav class="pictureprincipal card">
+                        <div class="card-body">
+                            
+                            <h5 class="card-title">Agregar Actividad</h5>
+                                
+                                <!-----------------Actividad 1------------------------------>
+                            <div class="card-body">
+                            <form >
+
+                                <div class="col-md-12 mb-3 form-group row ">
+                                    <label for="validationTooltip01">Título</label>
+                                    <input type="text" class="form-control " id="idTituloAct" placeholder="Título de la Actividad" autocomplete="off" required>
+                                    <div class="valid-tooltip">
+                                    Looks good
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3 form-group row">
+                                    <label for="validationTooltip01">Descripcion</label>
+                                    <input type="text" class="form-control" id="idDescAct" autocomplete="off" placeholder="Descripcion de la Actividad"  required>
+                                    <div class="valid-tooltip">
+                                    Looks good!
+                                    </div>
+                                </div>
+                                <br>
+
+                                <label>Fecha Inicio</label>
+                                <br>
+                                <div class="col-md-12 mb-3 form-group row">
+                                    <label for="validationTooltip01">Día</label>
+                                    <input type="number" class="form-control" style="width: 40%; margin-left: 3%; margin-right: 5%;" id="idDiaInicio" placeholder="Día Inicio"  required>
+                                    <div class="valid-tooltip">
+                                    Looks good!
+                                    </div>
+                                    <label for="validationTooltip01">Mes</label>
+                                    <select class="form-control" style="width: 40%; margin-left: 3%;" id="idMesInicio" placeholder="Ingresar Fecha Inicio"  required>
+                                        <option value="0" selected disabled>-Mes-</option>
+                                        <option value="1">Enero</option>
+                                        <option value="2">Febrero</option>
+                                        <option value="3">Marzo</option>
+                                        <option value="4">Abril</option>
+                                        <option value="5">Mayo</option>
+                                        <option value="6">Junio</option>
+                                        <option value="7">Julio</option>
+                                        <option value="8">Agosto</option>
+                                        <option value="9">Septiembre</option>
+                                        <option value="10">Octubre</option>
+                                        <option value="11">Noviembre</option>
+                                        <option value="12">Diciembre</option>
+                                    </select>
+                                    <div class="valid-tooltip">
+                                    Looks good!
+                                    </div>
+                                </div>
+                                <br>
+
+                                <label>Fecha Fin</label>
+                                <br>
+
+                                <div class="col-md-12 mb-3 form-group row">
+                                    <label for="validationTooltip01">Día</label>
+                                    <input type="number" class="form-control" style="width: 40%; margin-left: 3%; margin-right: 5%;" id="idDiaFin" placeholder="Día Fin"  required>
+                                    <div class="valid-tooltip">
+                                    Looks good!
+                                    </div>
+                                    <label for="validationTooltip01">Mes</label>
+                                    <select class="form-control" style="width: 40%; margin-left: 3%;" id="idMesFin" placeholder="Ingresar Fecha Inicio"  required>
+                                        <option value="0" selected disabled>-Mes-</option>
+                                        <option value="1">Enero</option>
+                                        <option value="2">Febrero</option>
+                                        <option value="3">Marzo</option>
+                                        <option value="4">Abril</option>
+                                        <option value="5">Mayo</option>
+                                        <option value="6">Junio</option>
+                                        <option value="7">Julio</option>
+                                        <option value="8">Agosto</option>
+                                        <option value="9">Septiembre</option>
+                                        <option value="10">Octubre</option>
+                                        <option value="11">Noviembre</option>
+                                        <option value="12">Diciembre</option>
+                                    </select>
+                                    <div class="valid-tooltip">
+                                    Looks good!
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="col-md-12 mb-3 form-group row">
+                                <label for="validationTooltip01">Carrera:</label>
+                                <select class="form-control"  id="idCarreras" name="idHorario">
+                                    
+                                </select>
+                            </div>
+                            <br>
+                                <button class="btn btn-primary" type="button" onclick="(setActividad())" style="background-color: #000035; color: white;">Agregar</button>
+                            </form>
+
+                        </div> <!--End card body-->
+                    </nav>
+                    <br>
+                    <br>
+                    <!-- fin:: pictureprincipal -->
+                    </div>  
+                </div> <!-- End col m8 -->
+              
+            </div>
+            
+          </div>
+
+          <script src="../js/script.js"></script>
+
+    </body>
+</html>

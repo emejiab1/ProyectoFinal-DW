@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+     
+       <link rel="stylesheet" href="../css/estilo.css"> <!-- Llamado de hoja de estilos desde carpeta Styles  -->
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+       <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body class="body_cls" onload="getCarreraEstudiante()">
+    <div class="modal-dialog text-center Contenido">
+        <div class="col-sm-10 main-section"  >
+            <div class="modal-content" >
+                <div class="col-12 user-img">
+                    <img src="../imagenes/formulario-icono.png" />
+                </div>
+                    <form class="col-12" >
+                        <h3>Registro</h3>
+                        <br>
+                        <div class="form-group" id="name">
+                            <input type="text" id="idNombreE" class="form-control" placeholder=" Nombre completo" name="name" autocomplete="off">
+                        </div>
+                        
+                        <div class="form-group" id="userName">
+                            <input type="text" id="idUsuarioE" class="form-control" placeholder="Nombre de usuario" name="userName" autocomplete="off">
+                        </div>
+                        
+                        <div class="form-group" id="password">
+                            <input type="password" id="idContraseñaE" class="form-control" placeholder="Password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control"  id="idRegCarrera" name="idHorario">
+                                
+                            </select>
+                        </div>
+                        <button type="button" onclick="setEstudiante()" id="Botone" class="btn btn-outline-primary"><i class="fas fa-sign-in-alt"></i>  Registrarse
+                        </button>
+                        <br>
+                        <br>
+                        <div class="col-12 Register">
+                            <a href="../index.html" id="enlaces"> ¡Ya tengo una cuenta! </a>
+                        </div>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/script.js"></script>
+
+</body>
+</html>

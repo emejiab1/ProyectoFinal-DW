@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncios</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body onload="getCarrera()">
+
+    <header>
+        <nav class="navbar navegador">
+            <img src="../imagenes/logo_1.png" width="300px">
+            <ul class="navbar-var grid-header" >
+                <!-- Llamado de paginas desde carpeta Pages -->
+                <li> <a class="nav-link" href="../index.html">Salir</a> </li>
+                <li> <a class="nav-link" href="agregar_catedratico.html">Catedrático</a> </li>
+                <li> <a class="nav-link" href="agregar_carrera.html">Carrera</a> </li>
+                <li> <a class="nav-link" href="programar_curso.html">Horario</a> </li>
+                <li> <a class="nav-link" href="agregar_curso.html">Curso</a> </li>
+                <li> <a class="nav-link" href="agregar_actividad.html">Actividad</a> </li>
+                <li> <a class="nav-link" href="promociones.html">Promoción</a> </li>
+                <li> <a class="nav-link" href="agregar_anuncio.html">Anuncio</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <header>
+                <br>
+                <h2 class="text-center" id="V1">Agregar Anuncios</h2>
+            </header>
+    
+            <form action="">
+                <label for="idTitulo">Título:</label>
+                <input type="text" class="form-control" id="idTitulo" name="txtTitulo" autocomplete="false" placeholder="Ingresar titulo">
+                <br>
+                <label for="idinfo">Información:</label>
+                <input type="text" class="form-control" id="idinfo" name="idinfo" placeholder="Ingresar el texto">
+                <br>
+                <label for="idFacultad">Seleccionar la carrera:</label>
+                <select class="form-control"  id="idCarreras" name="idFacultad" >
+                    
+                </select>
+                <br>
+                
+                <small style="color:red">Opcional</small>
+                <br>
+                <label for="idImagen">Compartir una imagen:</label>
+                <br>
+                <input type="file" class="btn btn-success" style="background-color: #000035; color: white;" id="idImagen" name="fileImagen" onchange="getFile()">
+    
+                <br>
+                <br>
+               
+
+                <button type="button" onclick="setAnuncio()" class="btn btn-success" style="background-color: #000035; color: white;">Guardar Datos</button>
+               
+                <br>
+                <br>
+                <br>
+    
+            </form>
+    
+        </div>
+
+                
+                
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+/*Estilo de la página principal*/
+.navegador{
+
+    background-color: #000035;
+    
+    
+    }
+.grid-header a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.grid-header a:hover{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+.grid-header li{   
+    float: right;
+    list-style: none;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding-right: 0px;
+}
+
+#anuncios{
+    float: left;
+    width: 70%;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+#promociones{
+    float: left;
+    margin-left: 3%;
+    padding-top: 2%;
+    padding-right: 2%;
+    width: 27%;
+}
+
+
+/*Estilo del login, recuperar contraseña y registro*/
+.body_cls{
+    background-image: linear-gradient(rgba(0, 60, 255, 0.603), rgba(0, 174, 255, 0.274));
+    /* utilizacion de fondo de pantalla degradado (Pseudo Clases)*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+#Botone{
+    width: 70%;
+    margin: 5px 0 20px;
+}
+
+.Btn{
+    padding-left: 35%;
+}
+
+#Botone-order{
+    width: 40%;
+    margin: 5px 0 20px;
+    background-color: black;
+}
+
+.form-group{
+    width: 80%;
+    padding-left: 20%;
+}
+
+.login{
+    width:35%;
+}
+
+.logo{
+    margin: -390px auto; 
+    width: 0%;
+}
+
+.main-section{
+    margin: 0 auto;
+    margin-top: 11%;
+}
+
+.modal-content{
+    opacity: 0.80;
+    padding: 0 25px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.user-img{
+
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+.user-img img{
+    width: 100px;
+    height: 100px;
+}
+
+#enlaces:hover{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#divLogin{
+    float: left;
+    margin-left: 9%;
+    width: 50%;
+}
+
+#divLogo{
+    float: left;
+    width: 50%;
+}
+
+#imgLogin{
+    border-radius: 50%;
+}
+
+#logoLogin{
+    padding-bottom: 19%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 19%;
+    margin: 0;
+}
+
+/*Este estilo corresponde a la página que mostrará la información sobre las facultades de la Universidad*/
+#information{
+    float: left;
+    padding: 0 2%;
+    width: 30%;
+}
+
+#facultad{
+    float: left;
+    padding: 0 2%;
+    width: 70%;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    width: 21%;
+}
+
+/*Este estilo corresponde a la página que permite añadir las promociones para las facultades de la Universidad*/
+#añadir, #programarcurso{
+    float: left;
+    padding: 0px 5%;
+    width: 50%;
+    }
+
+/*Este estilo corresponde a la página que permite eliminar las promociones para las facultades de la Universidad*/
+#eliminar{
+float: left;
+padding: 10% 5%;
+width: 50%;
+}
+
+/* estilo de formulario ingreso de facultad */
+.btn-update{
+    margin-bottom: 5%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.formulario-facultad{
+    border-radius: 7%;
+    box-shadow: 0px 0px 2px 0px #000;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+}
+
+.formulario-facultad-actualizar{
+    border-radius: 3%;
+    box-shadow: 0px 0px 2px 0px #000;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 17%;
+}
+
+.selector-update{
+    margin-left: 10%;
+    margin-right: 10%;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Cursos</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body onload="cargarPagHorario()">
+
+    <header>
+        <nav class="navbar navegador">
+            <img src="../imagenes/logo_1.png" width="300px">
+            <ul class="navbar-var grid-header" >
+                <!-- Llamado de paginas desde carpeta Pages -->
+                <li> <a class="nav-link" href="../index.html">Salir</a> </li>
+                <li> <a class="nav-link" href="agregar_catedratico.html">Catedrático</a> </li>
+                <li> <a class="nav-link" href="agregar_carrera.html">Carrera</a> </li>
+                <li> <a class="nav-link" href="programar_curso.html">Horario</a> </li>
+                <li> <a class="nav-link" href="agregar_curso.html">Curso</a> </li>
+                <li> <a class="nav-link" href="agregar_actividad.html">Actividad</a> </li>
+                <li> <a class="nav-link" href="promociones.html">Promoción</a> </li>
+                <li> <a class="nav-link" href="agregar_anuncio.html">Anuncio</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="programarcurso">
+            <br>
+            <h3>Programación de Cursos</h3>
+            <form action="">
+            <br>
+            <label for="idCarrera">Seleccione su Carrera:</label>
+            <select class="form-control"  id="idCarreras" name="idCarreras" onchange="comboboxProgCursos()">
+                <option value="1" selected>-Carreras-</option>
+                
+            </select>
+            <br>
+            <label for="idCurso">Seleccionar un Curso:</label>
+            <select class="form-control"  id="idCursos" name="idCurso" >
+                <option value="1" selected>-Cursos-</option>
+            </select>
+            <br>
+            <label for="idJornada">Seleccionar la jornada:</label>
+            <select class="form-control"  id="idJornada" name="idHorario" >
+                <option value="1" selected>-Jornada-</option>
+                
+            </select>
+            <br>
+            <label for="idHorario">Seleccionar un horario:</label>
+            <select class="form-control"  id="idHorario" name="idHorario" >
+                <option value="1" selected disabled>-Horarios-</option>
+                <option value="2">07:00 am - 09:00 am</option>
+                <option value="3">09:00 am - 11:00 am</option>
+                <option value="4">11:00 am - 01:00 pm</option>
+                <option value="5">02:00 pm - 04:00 pm</option>
+                <option value="6">04:00 pm - 06:00 pm</option>
+            </select>
+            <br>
+            <label for="idSeccion">Ingrese una sección:</label>
+            <input type="text" class="form-control" id="idSeccion" name="txtSeccion" autocomplete="false">
+            <br>
+            <label for="idCatedratico">Seleccionar un Catedrático de Curso:</label>
+            <select class="form-control"  id="idAddCatedratico" name="idCatedratico" >
+                <option value="1">-Catedráticos-</option>
+                <option value="2">Catedrático 1</option>
+                <option value="3">Catedrático 2</option>
+                <option value="4">Catedrático 3</option>
+            </select>
+            <br>
+            <input type="button" onclick="setProgramacion()" value="Guardar datos" class="btn btn-success" style="background-color: #000035; color: white;">
+            <br>
+            <br>
+            <br>
+        </form>
+    </article>
+   
+                
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

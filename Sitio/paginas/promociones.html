@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body onload="cargarPagProm()">
+
+    <header>
+        <nav class="navbar navegador">
+            <img src="../imagenes/logo_1.png" width="300px">
+            <ul class="navbar-var grid-header" >
+                <!-- Llamado de paginas desde carpeta Pages -->
+                <li> <a class="nav-link" href="../index.html">Salir</a> </li>
+                <li> <a class="nav-link" href="agregar_catedratico.html">Catedrático</a> </li>
+                <li> <a class="nav-link" href="agregar_carrera.html">Carrera</a> </li>
+                <li> <a class="nav-link" href="programar_curso.html">Horario</a> </li>
+                <li> <a class="nav-link" href="agregar_curso.html">Curso</a> </li>
+                <li> <a class="nav-link" href="agregar_actividad.html">Actividad</a> </li>
+                <li> <a class="nav-link" href="promociones.html">Promoción</a> </li>
+                <li> <a class="nav-link" href="agregar_anuncio.html">Anuncio</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="añadir">
+            <br>
+            <h3>Añadir Promoción</h3>
+            <form action="">
+            <label for="idTitulo">Título:</label>
+            <input type="text" class="form-control" id="idTitulo" name="txtTitulo" autocomplete="false">
+            <br>
+            <label for="idDescripcion">Descripción:</label>
+            <input type="text" class="form-control" id="idDescripcion" name="txtDescripcion" autocomplete="false">
+            <br>
+            <label for="idFacultad">Seleccionar una carrera:</label>
+            <select class="form-control"  id="idCarreras" name="idFacultad" >
+                
+            </select>
+            <br>
+            
+            <label for="idPromo">Compartir una imagen:</label>
+            <br>
+            <input type="file" class="btn btn-success" style="background-color: #000035; color: white;" id="idImagen" name="fileImagen" onchange="getFile()">
+            <hr>
+            <input type="button" onclick="setPromocion()" value="Guardar datos" class="btn btn-success" style="background-color: #000035; color: white;">
+            <br>
+            <br>
+            <br>
+        </form>
+    </article>
+
+    <article id="eliminar">
+        
+         <h2>Eliminar Promoción</h2>
+         <form action="">
+            <label for="idTituloE">Seleccione el Título de la promoción que desea eliminar</label>
+            <br>
+            <select name="cbTituloE" id="idTituloProm" class="form-control">
+                
+            </select>
+            <br><br>
+            <input type="button" onclick="quitarPromocion()" value="Eliminar Promoción" class="btn btn-success" style="background-color: #000035; color: white;">
+        </form>
+    </article>
+                
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
